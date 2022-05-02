@@ -175,6 +175,8 @@ function buscar(letra) {
 function cargarDatos(letra) {
 
     console.log("estoy mostrando tragos con letra" + letra)
+    
+    //conexion a la api
     $.ajax({
         type: "GET",
         url: " https: //www.thecocktaildb.com/api/json/v1/1/search.php?f=" + letra,
@@ -194,8 +196,3 @@ function cargarDatos(letra) {
 
 }
 
-// var letrasArray = ["a", "b", "c", "d", "e", "f"];
-// letrasArray.forEach(element => {
-//             console.log(element)
-//             var url = "https: //www.thecocktaildb.com/api/json/v1/1/search.php?f=" + element;
-//             cargarDatos(url, element)
